@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultManagedIdentity", "KeyVaultManagedIdentity\KeyVaultManagedIdentity.csproj", "{A78AB4E9-4B2B-437B-95F9-D549CB663DA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A78AB4E9-4B2B-437B-95F9-D549CB663DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78AB4E9-4B2B-437B-95F9-D549CB663DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78AB4E9-4B2B-437B-95F9-D549CB663DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78AB4E9-4B2B-437B-95F9-D549CB663DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B858366-099D-426F-A186-B69C3FB0972F}
+	EndGlobalSection
+EndGlobal
