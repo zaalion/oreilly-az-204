@@ -12,6 +12,12 @@ namespace FunctionApp1
 {
     public static class HttpTriggered
     {
+        /// <summary>
+        /// https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp
+        /// </summary>
+        /// <param name="req"></param>
+        /// <param name="log"></param>
+        /// <returns></returns>
         [FunctionName("HttpTriggered")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,

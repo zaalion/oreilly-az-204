@@ -7,6 +7,11 @@ namespace FunctionApp1
 {
     public static class TimerTriggered
     {
+        /// <summary>
+        /// https://en.wikipedia.org/wiki/Cron
+        /// </summary>
+        /// <param name="myTimer"></param>
+        /// <param name="log"></param>
         [FunctionName("TimerTriggered")]
         public static void Run([TimerTrigger("*/1 * * * *")]TimerInfo myTimer, ILogger log)
         {

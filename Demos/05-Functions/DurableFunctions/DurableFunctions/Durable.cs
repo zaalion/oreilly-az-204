@@ -11,6 +11,11 @@ namespace DurableFunctions
 {
     public static class Durable
     {
+        /// <summary>
+        /// https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         [FunctionName("Durable")]
         public static async Task<List<string>> RunOrchestrator(
             [OrchestrationTrigger] IDurableOrchestrationContext context)

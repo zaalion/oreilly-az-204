@@ -137,7 +137,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\appservice-demo01 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\appservice-demo01 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\appservice-demo01 - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\appservice-demo01 - Web Deploy2.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
