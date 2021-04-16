@@ -1,0 +1,9 @@
+BlobEndpoint=https://storagepolicydemo01.blob.core.windows.net/;QueueEndpoint=https://storagepolicydemo01.queue.core.windows.net/;FileEndpoint=https://storagepolicydemo01.file.core.windows.net/;TableEndpoint=https://storagepolicydemo01.table.core.windows.net/;SharedAccessSignature=sv=2020-02-10&ss=bfqt&srt=co&sp=rwdlacupx&se=2021-04-16T19:28:22Z&st=2021-04-16T11:28:22Z&spr=https&sig=Re%2BQ46zUXip3ouXUkP7s4foQx0YJ3vPvm%2FyNC3Pxfcg%3D
+
+?sv=2020-02-10&ss=bfqt&srt=co&sp=rwdlacupx&se=2021-04-16T19:28:22Z&st=2021-04-16T11:28:22Z&spr=https&sig=Re%2BQ46zUXip3ouXUkP7s4foQx0YJ3vPvm%2FyNC3Pxfcg%3D
+
+https://storagepolicydemo01.blob.core.windows.net/?sv=2020-02-10&ss=bfqt&srt=co&sp=rwdlacupx&se=2021-04-16T19:28:22Z&st=2021-04-16T11:28:22Z&spr=https&sig=Re%2BQ46zUXip3ouXUkP7s4foQx0YJ3vPvm%2FyNC3Pxfcg%3D
+
+
+
+
