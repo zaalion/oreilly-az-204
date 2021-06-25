@@ -7,6 +7,7 @@ namespace GraphTutorialOr01
 {
     /// <summary>
     /// https://docs.microsoft.com/en-us/graph/tutorials/dotnet-core?tutorial-step=1
+    /// https://developer.microsoft.com/en-us/graph/graph-explorer
     /// </summary>
     class Program
     {
