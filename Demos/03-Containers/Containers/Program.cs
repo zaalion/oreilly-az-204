@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Containers
 {
+    /// <summary>
+    /// https://docs.microsoft.com/en-us/visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)
