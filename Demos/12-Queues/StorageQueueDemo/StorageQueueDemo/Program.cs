@@ -11,10 +11,7 @@ namespace StorageQueueDemo
     /// </summary>
     class Program
     {
-        private static string _connectionString = "DefaultEndpointsProtocol=https;" +
-                "AccountName=storagepolicydemo01;" +
-                "AccountKey=WRACZ3IsSx92RGuN47mr+GZl9KoZNkdWpzW5rM+S0oR6GgsomvBFrdqear0b+tyOZoWunGav6BBIs5OY5aD10g==;" +
-                "EndpointSuffix=core.windows.net";
+        private static string _connectionString = "DefaultEndpointsProtocol=https;AccountName=storageordemo02;AccountKey=BP2AnJnZl4k4dg1LaWNHJLvTfRIvX0I+HL3OgxmZJkuN0IJasnwTNusQ8RXlAcYeYDYTAgBGXptVpnbvTrAwGA==;EndpointSuffix=core.windows.net";
 
         static void Main(string[] args)
         {

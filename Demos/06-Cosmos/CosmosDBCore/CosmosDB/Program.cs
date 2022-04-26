@@ -17,7 +17,8 @@ namespace CosmosDB
         {
             try
             {
-                string endpoint = "https://cosmosdbcore1.documents.azure.com:443/";
+                // https://cosmossqlordemo02.documents.azure.com:443/
+                string endpoint = "https://cosmossqlordemo02.documents.azure.com:443/";
                 if (string.IsNullOrEmpty(endpoint))
                 {
                     throw new 
@@ -25,7 +26,7 @@ namespace CosmosDB
                 }
 
                 string authKey =
-                    "zNDVO4JRUm39jvKhaej6fQ6MdlLgxliWyXyIzeTUYfJqE6L4Gv15jTgAZM9aDZ8iOd91BC6qFT7kc8o8ulGerg==";
+                    "CP687KRE8y9z8EhuvPIVmvvgkOESJcQNxMn6j07962Q0mKcOIO1x2NmQQgaj28WAJlrhYQOEjjbxuL9ekE2h4A==";
 
                 if (string.IsNullOrEmpty(authKey) || string.Equals(authKey, "Super secret key"))
                 {
