@@ -9,6 +9,9 @@ using Microsoft.Owin.Security.OpenIdConnect;
 
 namespace IdentityPlatformDemo.Controllers
 {
+    /// <summary>
+    /// https://docs.microsoft.com/en-us/azure/active-directory/develop/sample-v2-code
+    /// </summary>
     public class HomeController : Controller
     {
         // GET: Home

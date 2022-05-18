@@ -16,7 +16,7 @@ namespace IdentityPlatformDemo
     public class Startup
     {
         // The Client ID is used by the application to uniquely identify itself to Microsoft identity platform.
-        string clientId = "132098cf-0094-47e1-b01a-0baa8a9e4c46";
+        string clientId = "a8e7964b-9313-4871-a707-9f9e3b857064";
 
         // RedirectUri is the URL where the user will be redirected to after they sign in.
         string redirectUri = "https://localhost:44348/";

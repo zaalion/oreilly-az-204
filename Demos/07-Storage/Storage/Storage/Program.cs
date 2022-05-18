@@ -9,7 +9,7 @@ namespace Storage
 {
     class Program
     {
-        private static string _connectionString = "DefaultEndpointsProtocol=https;AccountName=storageordemo02;AccountKey=BP2AnJnZl4k4dg1LaWNHJLvTfRIvX0I+HL3OgxmZJkuN0IJasnwTNusQ8RXlAcYeYDYTAgBGXptVpnbvTrAwGA==;EndpointSuffix=core.windows.net";
+        private static string _connectionString = "DefaultEndpointsProtocol=https;AccountName=storageordemo02;AccountKey=u3WSfUz7UFjFhkJarWXieSFzBXkIl9Wa0Jx7pifLeVfAqPOSd7zjf2FYUwJxaI73oEsCrGwAQSybS/+P/2LkQA==;EndpointSuffix=core.windows.net";
 
         /// <summary>
         /// See https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet
