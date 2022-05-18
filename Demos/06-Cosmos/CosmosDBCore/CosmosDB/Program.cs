@@ -18,7 +18,7 @@ namespace CosmosDB
             try
             {
                 // https://cosmossqlordemo02.documents.azure.com:443/
-                string endpoint = "https://cosmossqlordemo02.documents.azure.com:443/";
+                string endpoint = "https://cosmossqlordemo.documents.azure.com:443/";
                 if (string.IsNullOrEmpty(endpoint))
                 {
                     throw new 
@@ -26,7 +26,7 @@ namespace CosmosDB
                 }
 
                 string authKey =
-                    "CP687KRE8y9z8EhuvPIVmvvgkOESJcQNxMn6j07962Q0mKcOIO1x2NmQQgaj28WAJlrhYQOEjjbxuL9ekE2h4A==";
+                    "02C9KKYsFmxfdTKhMty1wEjrpXugPel3PfGAe8dEh0rM7gH2ZqmEaoxz02gM8RsWurhA9XC0bpTNg7eKlteXJA==";
 
                 if (string.IsNullOrEmpty(authKey) || string.Equals(authKey, "Super secret key"))
                 {
@@ -38,6 +38,7 @@ namespace CosmosDB
                 //These values are available from the Azure Management Portal on the Cosmos Account Blade under "Keys"
                 //NB > Keep these values in a safe & secure location. Together they provide Administrative access to your Cosmos account
                 using CosmosClient client = new CosmosClient(endpoint, authKey);
+                
                 RunDatabaseDemo(client);
                 CreateItem();
             }
@@ -65,7 +66,7 @@ namespace CosmosDB
         {
             // An object containing relevant information about the response
             DatabaseResponse databaseResponse = 
-                client.CreateDatabaseIfNotExistsAsync(databaseId, 400).Result;
+                client.CreateDatabaseIfNotExistsAsync(databaseId, 1000).Result;
 
             // A client side reference object that allows additional operations like ReadAsync
             Database database = databaseResponse;
@@ -94,7 +95,7 @@ namespace CosmosDB
                 Console.WriteLine($"\n4. Read a database throughput: {throughputResponse}");
 
                 // Update the current throughput for the database
-                database.ReplaceThroughputAsync(11000).Wait();
+                database.ReplaceThroughputAsync(1000).Wait();
             }
 
             Console.WriteLine("\n5. Reading all databases resources for an account");
@@ -129,8 +130,9 @@ namespace CosmosDB
                 Name = "Reza",
                 Email = "Reza@test.com"
             };
+
             ItemResponse<Person> response = 
-                _container.CreateItemAsync(person, new PartitionKey(person.City)).Result;
+                 _container.CreateItemAsync(person, new PartitionKey(person.City)).Result;
 
             return person;
         }

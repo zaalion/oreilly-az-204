@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:57186",
-      "sslPort": 44301
+      "applicationUrl": "http://localhost:65046",
+      "sslPort": 44336
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Containers": {
+    "Weather": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

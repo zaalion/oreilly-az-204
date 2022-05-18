@@ -1,6 +1,6 @@
 using System;
 
-namespace Containers
+namespace Weather
 {
     public class WeatherForecast
     {

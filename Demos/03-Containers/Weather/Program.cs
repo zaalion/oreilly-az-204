@@ -7,11 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Containers
+namespace Weather
 {
-    /// <summary>
-    /// https://docs.microsoft.com/en-us/visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
-    /// </summary>
     public class Program
     {
         public static void Main(string[] args)
