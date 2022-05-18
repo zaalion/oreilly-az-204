@@ -18,7 +18,7 @@ namespace CosmosDB
             try
             {
                 // https://cosmossqlordemo02.documents.azure.com:443/
-                string endpoint = "https://cosmossqlordemo.documents.azure.com:443/";
+                string endpoint = "https://cosmosdbordemo01.documents.azure.com:443/";
                 if (string.IsNullOrEmpty(endpoint))
                 {
                     throw new 
@@ -26,7 +26,7 @@ namespace CosmosDB
                 }
 
                 string authKey =
-                    "02C9KKYsFmxfdTKhMty1wEjrpXugPel3PfGAe8dEh0rM7gH2ZqmEaoxz02gM8RsWurhA9XC0bpTNg7eKlteXJA==";
+                    "1QSUp7LaIZNERsv7nxugQzevSw0xU0BjiRXAUdZ0oJizeCpF60tg56GdLigtqJQHOOju9aIXTgdFsXb1tqIymw==";
 
                 if (string.IsNullOrEmpty(authKey) || string.Equals(authKey, "Super secret key"))
                 {
@@ -66,7 +66,7 @@ namespace CosmosDB
         {
             // An object containing relevant information about the response
             DatabaseResponse databaseResponse = 
-                client.CreateDatabaseIfNotExistsAsync(databaseId, 1000).Result;
+                client.CreateDatabaseIfNotExistsAsync(databaseId, 500).Result;
 
             // A client side reference object that allows additional operations like ReadAsync
             Database database = databaseResponse;
@@ -95,7 +95,7 @@ namespace CosmosDB
                 Console.WriteLine($"\n4. Read a database throughput: {throughputResponse}");
 
                 // Update the current throughput for the database
-                database.ReplaceThroughputAsync(1000).Wait();
+                database.ReplaceThroughputAsync(500).Wait();
             }
 
             Console.WriteLine("\n5. Reading all databases resources for an account");

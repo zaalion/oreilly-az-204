@@ -12,15 +12,15 @@ namespace KeyVaultServicePrinciple
 {
     class Program
     {
-        static string appId = "1f8674e9-e8c0-4c6e-bbf0-9fe4e7a9c8e4";
-        static string appSecret = "K4~dWJgKkH4MN__RxTAz-H1x_57Ga.7DQS";
+        static string appId = "d9c2db92-e1d9-4021-b4c9-771541d05389";
+        static string appSecret = "9ps8Q~aKg7kaPtN7EvcYzsM0lbzd6Dgv2CG9jb6i";
         static string tenantId = "0ec02b79-d89f-48c4-9870-da4a7498d887";
 
         static void Main(string[] args)
         {
             var kv = new KeyVaultClient(GetAccessToken);
             //https://keyvault-or204demo.vault.azure.net/
-            var secret = kv.GetSecretAsync("https://keyvault-or204demo.vault.azure.net", "password")
+            var secret = kv.GetSecretAsync("https://vaultordemo01.vault.azure.net", "password")
                 .GetAwaiter().GetResult();
 
             Console.WriteLine("The secret value is : " + secret.Value);
