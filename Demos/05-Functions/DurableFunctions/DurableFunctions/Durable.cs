@@ -12,6 +12,27 @@ namespace DurableFunctions
     public static class Durable
     {
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="req"></param>
+        /// <param name="starter"></param>
+        /// <param name="log"></param>
+        /// <returns></returns>
+        [FunctionName("Durable_HttpStart")]
+        public static async Task<HttpResponseMessage> HttpStart(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestMessage req,
+            [DurableClient] IDurableOrchestrationClient starter,
+            ILogger log)
+        {
+            // Function input comes from the request content.
+            string instanceId = await starter.StartNewAsync("Durable", null);
+
+            log.LogInformation($"Started orchestration with ID = '{instanceId}'.");
+
+            return starter.CreateCheckStatusResponse(req, instanceId);
+        }
+
+        /// <summary>
         /// https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp
         /// </summary>
         /// <param name="context"></param>
@@ -36,20 +57,6 @@ namespace DurableFunctions
         {
             log.LogInformation($"Saying hello to {name}.");
             return $"Hello {name}!";
-        }
-
-        [FunctionName("Durable_HttpStart")]
-        public static async Task<HttpResponseMessage> HttpStart(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestMessage req,
-            [DurableClient] IDurableOrchestrationClient starter,
-            ILogger log)
-        {
-            // Function input comes from the request content.
-            string instanceId = await starter.StartNewAsync("Durable", null);
-
-            log.LogInformation($"Started orchestration with ID = '{instanceId}'.");
-
-            return starter.CreateCheckStatusResponse(req, instanceId);
         }
     }
 }
