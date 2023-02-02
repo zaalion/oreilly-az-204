@@ -152,7 +152,9 @@
     <None Include="Properties\PublishProfiles\appservicewinordemo01 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\appsrvaz900 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\appsrvdemoor204 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\az204ordemo02appsrv - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\az204ordemo1 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\az204ordemoapp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
