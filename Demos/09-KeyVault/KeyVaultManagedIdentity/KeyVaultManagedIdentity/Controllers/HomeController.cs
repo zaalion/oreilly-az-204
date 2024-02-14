@@ -28,7 +28,7 @@ namespace KeyVaultManagedIdentity.Controllers
                  }
             };
             var client = new SecretClient
-                (new Uri("https://keyvault-or204demo.vault.azure.net/"),
+                (new Uri("https://az204ordemokv.vault.azure.net/"),
                 new DefaultAzureCredential(), options);
 
             KeyVaultSecret secret = client.GetSecret("password");
